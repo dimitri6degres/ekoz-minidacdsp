@@ -47,8 +47,9 @@ It is currently only done for iphones...
 (looking for someone to make it available for androïd…)
 
 ## Installation
+• install the app on your phone  
 • mount the hifiberry DAC+ DSP module on top of the raspberry pi zero  
-• download the <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/archive/main.zip>zip file from this repo</a>
+• download the <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/archive/main.zip>zip file from this repo</a>  
 • download the last os image from <a href=https://github.com/nmcclain/raspberian-firstboot/releases>raspberian-firstboot</a>  
 • mount the image on your computer then copy files from this boot folder to the image boot volume  
 • unmout boot folder and copy the os image on the sdcard (i.g. <a href=https://www.balena.io/etcher/>balenaEtcher</a>)  
@@ -59,4 +60,5 @@ It is currently only done for iphones...
 • the raspberry must reboot by itself to finish the install
 • your app must tell you when it's ok !
 
-##
+## how it works
+
