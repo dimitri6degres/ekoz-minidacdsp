@@ -1,5 +1,7 @@
 # ekoz-minidacdsp
 
+<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_01.jpg"></img>
+
 I wanted a dac with a "night mode" preset.  
 Movies' soundtrack are awfull : we don't anderstand dialogs, but fx are very loud…  
 it's impossible to watch a movie without playing permanently with the remote !
