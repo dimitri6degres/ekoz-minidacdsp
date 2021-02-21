@@ -94,5 +94,13 @@ So i need now anyone who has python knowledge to re-write the python script,
 a raspberry/linux expert to rewrite the install script,  
 a swift coder to improve the ios app,  
 a android coder to make it available for all,
-maybe a web coder to make a web version
+maybe a web coder to make a web version.  
+(And somebody to re-write all what you read, because i've got a fucking bad english…)
 
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
