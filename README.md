@@ -30,8 +30,8 @@ select the DSP presets | change dac volume | activate BT pairing | activate Wifi
 In this design, the cards are plugged in rather than screwed.  
 Everything is held by a single screw.  
 the box is presented verticaly.
-Cooling is provided by long slits.
-There is an empty space to fit an SDcard adapter.
+Cooling is provided by long slits.  
+There is an empty space in the base to fit an SDcard adapter.
 
 <img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_03.jpg"></img>
 
@@ -40,5 +40,10 @@ STL files :
 
 
 ## the companion app
-The interface is intentionally simplistic.  
-<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_04.jpg"></img> 
+The interface is intentionally simplistic. 
+<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_04.jpg"></img>   
+It is currently only done for iphones...  
+(looking for someone to make it available for androïd…)
+
+## Installation
+
