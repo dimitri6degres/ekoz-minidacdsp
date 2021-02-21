@@ -85,12 +85,13 @@ but google and github is a perfect source of inspiration, so thanks to:
 <a href=https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor>RayWenderlich.com</a>  
 and others…
 
-## But I need some more help
+## what's next?
 This project is not finished. I just drew the outlines.  
 What i did is just DIY, even if it doesn't work too badly...  
 it's enough for me, but surely not enough for sharing.  
 (I'd never use raspberry, python, bluetooth before this project)  
 So i need now anyone who has python knowledge to re-write the python script,  
+sound engineers to get better compressor / audio settings,  
 a raspberry/linux expert to rewrite the install script,  
 a swift coder to improve the ios app,  
 a android coder to make it available for all,
