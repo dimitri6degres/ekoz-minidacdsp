@@ -28,5 +28,7 @@ select the DSP presets | change dac volume | activate BT pairing | activate Wifi
 
 ## The 3D enclosure
 <img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_03.jpg"></img>
-<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/sources/3D_enclosure/ekoz-minidacdsp_base.stl"></img>
+https://github.com/dimitri6degres/ekoz-minidacdsp/blob/main/sources/3D_enclosure/ekoz-minidacdsp_base.stl
+https://github.com/dimitri6degres/ekoz-minidacdsp/blob/main/sources/3D_enclosure/ekoz-minidacdsp_hood.stl
+https://github.com/dimitri6degres/ekoz-minidacdsp/blob/main/sources/3D_enclosure/ekoz-minidacdsp_strip.stl
 
