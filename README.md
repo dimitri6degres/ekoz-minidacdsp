@@ -23,4 +23,8 @@ INPUT : bluetooth A2DP streaming & toslink
 OUTPUT : ananlog RCA & digital toslink  
 DSP : 4 presets (Bypass + 3 levels of compression)  
 APP : a companion app that communicate in bluetooth with the RPi to :  
-select the DSP presets | change dac volume | activate BT pairing | activate Wifi | shutdown Rpi | reset DSP  
+select the DSP presets | change dac volume | activate BT pairing | activate Wifi | shutdown Rpi | reset DSP
+
+---
+
+<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_02.jpg">
