@@ -16,7 +16,7 @@ so let's go…
 
 ---
 
-<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_02.jpg">
+<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_02.jpg"></img>
 The design is simple :  
 the Hifiberry DAC+ DSP on a RaspberryPi Zero in a 3D printed box.  
 the functionnalities are reduced to :  
