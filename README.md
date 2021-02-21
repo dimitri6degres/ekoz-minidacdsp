@@ -27,6 +27,11 @@ select the DSP presets | change dac volume | activate BT pairing | activate Wifi
 
 
 ## The 3D enclosure
+In this design, the cards are plugged in rather than screwed.  
+Everything is held by a single screw.  
+the box is presented verticaly.
+Cooling is provided by long slits.
+
 <img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_03.jpg"></img>
 
 STL files :  
