@@ -48,7 +48,9 @@ It is currently only done for iphones...
 
 ## Installation
 • mount the hifiberry DAC+ DSP module on top of the raspberry pi zero  
-• install the os image on the sdcard (i.g. <a href=https://www.balena.io/etcher/>balenaEtcher</a>)  
+• download the last os image from <a href=https://github.com/nmcclain/raspberian-firstboot>raspberian-firstboot</a>  
+• mount the image on your computer then copy files from this boot folder to the image boot volume  
+• unmout boot folder and copy the os image on the sdcard (i.g. <a href=https://www.balena.io/etcher/>balenaEtcher</a>)  
 • mount the card in the raspberry and boot it  
 • open the app on your phone, wait for the dac to be detected  
 • enter your wifi credentials and validate  
