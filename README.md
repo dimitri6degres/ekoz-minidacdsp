@@ -88,8 +88,11 @@ and others…
 ## But I need some more help
 This project is not finished. I just drew the outlines.  
 What i did is just DIY, even if it doesn't work too badly...  
-But i need now anyone who has python knowledge to re-write the python script,  
+it's enough for me, but surely not enough for sharing.  
+(I'd never use raspberry, python, bluetooth before this project)  
+So i need now anyone who has python knowledge to re-write the python script,  
 a raspberry/linux expert to rewrite the install script,  
 a swift coder to improve the ios app,  
 a android coder to make it available for all,
 maybe a web coder to make a web version
+
