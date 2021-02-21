@@ -86,7 +86,7 @@ but google and github is a perfect source of inspiration, so thanks to:
 and others…
 
 ## But I need some more help
-This project is not finished. I just drew the outlines. 
+This project is not finished. I just drew the outlines.  
 What i did is just DIY, even if it doesn't work too badly...  
 But i need now anyone who has python knowledge to re-write the python script,  
 a raspberry/linux expert to rewrite the install script,  
