@@ -62,15 +62,21 @@ It is currently only done for iphones...
 
 ## how it works
 
--- DSP on hifiberry card
+-- DSP on hifiberry card  
 the dsp is programmed with <a href=https://www.analog.com/en/design-center/evaluation-hardware-and-software/software/ss_sigst_02.html#>sigmastudio</a> to have 4 presets (1 bypass, 3 levels of compression)  
 the project file (<a href=https://github.com/dimitri6degres/ekoz-minidacdsp/tree/main/sources/sigmastudio>ekoz-minidacdsp.dspproj</a>) structure is made from 4 "shells" that can be modified  
 (looking for acoustics pros to improve settings)  
+There is no detection or switch for inputs, raspberry and toslink signals overlap  
 the xml profile file is tagged with registers for the volume and the channel's switch  
 
--- services on Raspberry
+-- services on Raspberry  
 in normal mode, wifi is disabled, bluetooth enabled but not discoverable nor pairable.  
 a GATT server is launched with a python script to communicate between the phone's app and the dsp.  
 the script uses the registers to read and modify on the fly the values in the dsp.
+BlueAlsa is used to stream bluetooth A2DP music.
 
-
+## Projects that help me…
+I'm not a code developper or expert with rapsberry, dsp, python…  
+but google and github is a perfect source of inspiration, so thanks to:  
+<a href=https://github.com/Douglas6/cputemp>douglas6 / cputemp</a>
+<a href=https://github.com/nicokaiser/rpi-audio-receiver>nicokaiser / rpi-audio-receiver</a>
