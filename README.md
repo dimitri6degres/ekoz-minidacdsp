@@ -78,8 +78,8 @@ BlueAlsa is used to stream bluetooth A2DP music.
 ## Projects that help me…
 I'm not a code developper or expert with rapsberry, dsp, python…  
 but google and github is a perfect source of inspiration, so thanks to:  
-https://stackoverflow.com
+<a href=https://stackoverflow.com>Stackoverflow.com, this wealth of information</a>  
+<a href=https://www.hifiberry.com/modify-dsp-registers-on-the-fly/>the hifiberry forum, guides and github</a>  
 <a href=https://github.com/Douglas6/cputemp>douglas6 / cputemp</a>  
 <a href=https://github.com/nicokaiser/rpi-audio-receiver>nicokaiser / rpi-audio-receiver</a>
-https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor
-https://www.hifiberry.com/modify-dsp-registers-on-the-fly/
+<a href=https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor>RayWenderlich.com</a>  
