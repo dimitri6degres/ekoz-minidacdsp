@@ -61,6 +61,8 @@ It is currently only done for iphones...
 • your app must tell you when it's ok !
 
 ## how it works
+
+-- DSP
 the dsp is programmed to have 4 presets (1 bypass, 3 levels of compression)  
 the xml profile file is tagged with registers of the volume and the channel's switch  
 a python script is looking for the registers and will change the values on the fly…
