@@ -16,6 +16,7 @@ so let's go…
 
 ---
 
+<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_02.jpg">
 The design is simple :  
 the Hifiberry DAC+ DSP on a RaspberryPi Zero in a 3D printed box.  
 the functionnalities are reduced to :  
@@ -27,4 +28,4 @@ select the DSP presets | change dac volume | activate BT pairing | activate Wifi
 
 ---
 
-<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_02.jpg">
+
