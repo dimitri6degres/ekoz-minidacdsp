@@ -96,5 +96,8 @@ a raspberry/linux expert to rewrite the install script,
 a swift coder to improve the ios app,  
 a android coder to make it available for all,
 maybe a web coder to make a web version.  
-(And somebody to re-write all what you read, because i've got a fucking bad english…)
+(And somebody to re-write all what you read, because i've got a quite bad english…)
 
+## how to get an ekoz-minidacsdsp?
+This is not a commercial project, you should build it by yourself. it's quite easy!  
+But if you prefer buy one. contact me.
