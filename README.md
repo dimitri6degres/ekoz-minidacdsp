@@ -12,7 +12,7 @@ i'm watching movies on a projector with an appleTV.
 So what i need is a small DAC with an optical input and stereo RCA output.  
 After some googling, i don't see anything that can resolve my problem.  
 The only way i've found was the <a href=https://www.hifiberry.com/shop/boards/hifiberry-dac-dsp>Hifiberry DAC+ DSP </a>  
-so the ekoz-minidacdsp project is born...
+so the **ekoz-minidacdsp project** is born...
 
 
 ## the design
