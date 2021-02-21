@@ -21,7 +21,7 @@ the Hifiberry DAC+ DSP on a RaspberryPi Zero in a 3D printed box.
 the functionnalities are reduced to :  
 INPUT : bluetooth A2DP streaming & toslink  
 OUTPUT : ananlog RCA & digital toslink  
-DSP : 4 presets (Bypass + 3 levels of compression)  
+DSP : 4 presets (1 bypass + 3 levels of compression)  
 APP : a companion app that communicate in bluetooth with the RPi to :  
 select the DSP presets | change dac volume | activate BT pairing | activate Wifi | shutdown Rpi | reset DSP
 
@@ -31,6 +31,7 @@ In this design, the cards are plugged in rather than screwed.
 Everything is held by a single screw.  
 the box is presented verticaly.
 Cooling is provided by long slits.
+There is an empty space to fit an SDcard adapter.
 
 <img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_03.jpg"></img>
 
