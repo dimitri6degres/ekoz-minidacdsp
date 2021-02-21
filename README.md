@@ -62,7 +62,8 @@ It is currently only done for iphones...
 
 ## how it works
 
--- DSP
-the dsp is programmed to have 4 presets (1 bypass, 3 levels of compression)  
+-- DSP on hifiberry card
+the dsp is programmed with <a href=https://www.analog.com/en/design-center/evaluation-hardware-and-software/software/ss_sigst_02.html#>sigmastudio</a> to have 4 presets (1 bypass, 3 levels of compression)  
+the project file (<a href=https://github.com/dimitri6degres/ekoz-minidacdsp/tree/main/sources/sigmastudio>ekoz-minidacdsp.dspproj</a>) structure is made from 4 "shell" that can be modified (looking for acoustics pros to improve settings)  
 the xml profile file is tagged with registers of the volume and the channel's switch  
 a python script is looking for the registers and will change the values on the fly…
