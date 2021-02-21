@@ -59,6 +59,9 @@ class EkozminidacdspService(Service):
     def __init__(self, index):
 
         self.wifi = True
+        cmd = 'echo discoverable no | sudo  bluetoothctl && echo pairable no | sudo  bluetoothctl'
+        os.system(cmd)
+        print("make bluetooth pairable no")
         self.bluetooth = False
         
         root = ET.parse('/var/lib/hifiberry/dspprogram.xml')
