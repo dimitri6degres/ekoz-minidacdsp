@@ -15,7 +15,7 @@ so let's go…
 
 
 ## the design
-<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_02.jpg"></img>
+<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_02.jpg"></img>  
 The design is simple :  
 the Hifiberry DAC+ DSP on a RaspberryPi Zero in a 3D printed box.  
 the functionnalities are reduced to :  
@@ -35,7 +35,5 @@ Cooling is provided by long slits.
 <img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_03.jpg"></img>
 
 STL files :  
-<a href=https://github.com/dimitri6degres/ekoz-minidacdsp/blob/main/sources/3D_enclosure/ekoz-minidacdsp_base.stl>ekoz-minidacdsp_base.stl</a> | 
-<a href=https://github.com/dimitri6degres/ekoz-minidacdsp/blob/main/sources/3D_enclosure/ekoz-minidacdsp_hood.stl>ekoz-minidacdsp_hood.stl</a> | 
-<a href=https://github.com/dimitri6degres/ekoz-minidacdsp/blob/main/sources/3D_enclosure/ekoz-minidacdsp_strip.stl>ekoz-minidacdsp_strip.stl</a>
+<a href=https://github.com/dimitri6degres/ekoz-minidacdsp/blob/main/sources/3D_enclosure/ekoz-minidacdsp_base.stl>ekoz-minidacdsp_base.stl</a> | <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/blob/main/sources/3D_enclosure/ekoz-minidacdsp_hood.stl>ekoz-minidacdsp_hood.stl</a> | <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/blob/main/sources/3D_enclosure/ekoz-minidacdsp_strip.stl>ekoz-minidacdsp_strip.stl</a>
 
