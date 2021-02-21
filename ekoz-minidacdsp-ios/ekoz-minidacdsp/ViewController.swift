@@ -99,8 +99,8 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
         
         print("found", peripheral.name as Any, peripheral.identifier)
         
-        if let peri = peripheral.name, peri == "ekoz-minidacdsp" {
-            print("find ekoz-minidacdsp")
+        if let peri = peripheral.name, peri == "ekoz-minidacdsp" || peri == "raspberrypi" {
+            print("find", peri)
             
             self.peripheral =  peripheral
             self.peripheral.delegate = self
