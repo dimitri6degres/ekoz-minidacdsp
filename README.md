@@ -11,8 +11,8 @@ i've got a good stereo system (don't want HC 5.1…)
 i'm watching movies on a projector with an appleTV.  
 So what i need is a small DAC with an optical input and stereo RCA output.  
 After some googling, i don't see anything that can resolve my problem.  
-The only way i've found was the Hifiberry DAC+ DSP  
-https://www.hifiberry.com/shop/boards/hifiberry-dac-dsp/  
+The only way i've found was the  
+<a href=https://www.hifiberry.com/shop/boards/hifiberry-dac-dsp>Hifiberry DAC+ DSP </a>  
 so let's go…
 
 
@@ -48,4 +48,6 @@ It is currently only done for iphones...
 (looking for someone to make it available for androïd…)
 
 ## Installation
-
+mount the hifiberry DAC+ DSP module on top of the raspberry pi zero 
+install the os image on the sdcard (i.g. <a href=https://www.balena.io/etcher/>balenaEtcher</a>  
+mount the card in the raspberry with 
