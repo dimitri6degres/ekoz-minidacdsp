@@ -57,7 +57,7 @@ It is currently only done for iphones...
 • open the app on your phone, wait for the dac to be detected  
 • enter your wifi credentials and validate  
 • wait a quite long time for the raspberry to install everything (20min?)  
-• the raspberry must reboot by itself to finish the install
+• the raspberry must reboot by itself to finish the install  
 • your app must tell you when it's ok !
 
 ## how it works
