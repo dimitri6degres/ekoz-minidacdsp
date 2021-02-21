@@ -27,6 +27,6 @@ APP : a companion app that communicate in bluetooth with the RPi to :
 select the DSP presets | change dac volume | activate BT pairing | activate Wifi | shutdown Rpi | reset DSP
 
 ---
-The 3D enclosure
+##The 3D enclosure
 <img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_03.jpg"></img>
 
