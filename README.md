@@ -16,3 +16,15 @@ so let's go…
 
 ---
 
+The design is simple :  
+the Hifiberry DAC+ DSP on a RaspberryPi Zero in a 3D printed box.  
+the functionnalities are reduced to :  
+INPUT : bluetooth A2DP streaming & toslink  
+OUTPUT : ananlog RCA & digital toslink  
+DSP : 4 presets (Bypass + 3 levels of compression)
+a companion app that communicate in bluetooth with the RPi to :  
+- select the DSP presets  
+- activate BT pairing  
+- activate Wifi  
+- shutdown Rpi
+- reset DSP
