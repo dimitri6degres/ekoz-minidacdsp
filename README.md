@@ -39,5 +39,5 @@ STL files :
 
 
 ## the companion app
-The interface is intentionally simplistic.
-
+The interface is intentionally simplistic.  
+<img src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_04.jpg"></img> 
