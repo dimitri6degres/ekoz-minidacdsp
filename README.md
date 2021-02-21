@@ -1,2 +1,9 @@
 # ekoz-minidacdsp
-a DAC with "night mode" preset to watch movies quietly… made with a Hifiberry DAC+DSP Hat on a raspberryPiZero
+
+I wanted a dac with a "night mode" preset.
+Movies' soundtrack are awfull : we don't anderstand dialogs, but fx are very loud…
+it's impossible to watch a movie without playing permanently with the remote !
+
+---
+
+After some googling, i don't see anything that can resolve my problem. (or very expensive…)
