@@ -81,5 +81,15 @@ but google and github is a perfect source of inspiration, so thanks to:
 <a href=https://stackoverflow.com>Stackoverflow.com, this wealth of information</a>  
 <a href=https://www.hifiberry.com/modify-dsp-registers-on-the-fly/>the hifiberry forum, guides and github</a>  
 <a href=https://github.com/Douglas6/cputemp>douglas6 / cputemp</a>  
-<a href=https://github.com/nicokaiser/rpi-audio-receiver>nicokaiser / rpi-audio-receiver</a>
+<a href=https://github.com/nicokaiser/rpi-audio-receiver>nicokaiser / rpi-audio-receiver</a>  
 <a href=https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor>RayWenderlich.com</a>  
+and others…
+
+## But I need some more help
+This project is not finished. I just drew the outlines. 
+What i did is just DIY, even if it doesn't work too badly...  
+But i need now anyone who has python knowledge to re-write the python script,  
+a raspberry/linux expert to rewrite the install script,  
+a swift coder to improve the ios app,  
+a android coder to make it available for all,
+maybe a web coder to make a web version
