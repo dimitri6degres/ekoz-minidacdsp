@@ -47,6 +47,7 @@ It is currently only done for iphones...
 (looking for someone to make it available for androïd…)
 
 ## Installation
-mount the hifiberry DAC+ DSP module on top of the raspberry pi zero 
-install the os image on the sdcard (i.g. <a href=https://www.balena.io/etcher/>balenaEtcher</a>  
-mount the card in the raspberry with 
+• mount the hifiberry DAC+ DSP module on top of the raspberry pi zero  
+• install the os image on the sdcard (i.g. <a href=https://www.balena.io/etcher/>balenaEtcher</a>  
+• mount the card in the raspberry and boot it.  
+
