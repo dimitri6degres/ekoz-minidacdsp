@@ -90,12 +90,12 @@ This project is not finished. I just drew the outlines.
 What i did is just DIY, even if it doesn't work too badly...  
 it's enough for me, but surely not enough for sharing.  
 (I'd never use raspberry, python, bluetooth before this project)  
-So i need now anyone who has python knowledge to re-write the python script,  
-sound engineers to get better compressor / audio settings,  
+So it's should be nice if anyone who has python knowledge can re-write the python script,  
+sound engineers help to get better compressor / audio settings,  
 a raspberry/linux expert to rewrite the install script,  
 a swift coder to improve the ios app,  
 a android coder to make it available for all,
-maybe a web coder to make a web version.  
+maybe a web coder to make a web version...  
 (And somebody to re-write all what you read, because i've got a quite bad english…)
 
 ## how to get an ekoz-minidacsdsp?
