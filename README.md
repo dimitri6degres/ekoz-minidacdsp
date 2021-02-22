@@ -72,7 +72,7 @@ the xml profile file is tagged with registers for the volume and the channel's s
 -- services on Raspberry  
 in normal mode, wifi is disabled, bluetooth enabled but not discoverable nor pairable.  
 a GATT server is launched with a python script to communicate between the phone's app and the dsp.  
-the script uses the registers to read and modify on the fly the values in the dsp.
+the script uses the registers to read and modify on the fly the values in the dsp.  
 BlueAlsa is used to stream bluetooth A2DP music.
 
 ## the projects that have helped me…
