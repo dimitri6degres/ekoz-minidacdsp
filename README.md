@@ -12,7 +12,7 @@ i'm watching movies on a projector with an appleTV.
 So what i need is a small DAC with an optical input and stereo RCA output.  
 After some googling, i don't see anything that can resolve my problem.  
 The only way i've found was the <a href=https://www.hifiberry.com/shop/boards/hifiberry-dac-dsp>Hifiberry DAC+ DSP </a>  
-so the **ekoz-minidacdsp project** is born...
+so the **ekoz-minidacdsp project** was born...
 
 
 ## the design
@@ -99,5 +99,10 @@ maybe a web coder to make a web version.
 (And somebody to re-write all what you read, because i've got a quite bad english…)
 
 ## how to get an ekoz-minidacsdsp?
-This is not a commercial project, you should able to build it by yourself. it's quite easy!  
+This is not a commercial project, you should be able to build it by yourself. it's quite easy!  
 But if you prefer to get one already working, contact me.
+
+## License
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/dimitri6degres/ekoz-minidacdsp">ekoz-minidacdsp</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/dimitri6degres/ekoz-minidacdsp">Dimitri Fontaine</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0  
+
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
