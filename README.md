@@ -101,3 +101,6 @@ maybe a web coder to make a web version.
 ## how to get an ekoz-minidacsdsp?
 This is not a commercial project, you should able to build it by yourself. it's quite easy!  
 But if you prefer to get one already working, contact me.
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ekoz-minidacdsp</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/dimitri6degres/ekoz-minidacdsp" property="cc:attributionName" rel="cc:attributionURL">Dimitri Fontaine</a> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licence Creative Commons Attribution - Pas d’Utilisation Commerciale 4.0 International</a>.
