@@ -1,8 +1,11 @@
 //
 //  SceneDelegate.swift
-//  Ekoz-miniDSP
+//  ekoz-minidacdsp
 //
-//  Created by Dimitri on 04/02/2021.
+//  Created on 04/02/2021.
+//
+//  ekoz-minidacdsp by Dimitri Fontaine is licensed under CC BY-NC 4.0.
+//  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
 //
 
 import UIKit

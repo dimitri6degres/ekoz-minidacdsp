@@ -26,9 +26,9 @@
 		<true/>
 	</dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Use of BT for communcation with Ekoz-minidacdsp</string>
+	<string>Use of BT for communcation with ekoz-minidacdsp</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>test</string>
+	<string>Use of BT for communcation with ekoz-minidacdsp</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

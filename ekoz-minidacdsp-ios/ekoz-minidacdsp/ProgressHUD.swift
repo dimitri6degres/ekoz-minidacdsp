@@ -1,11 +1,12 @@
 //
 //  ProgressHUD.swift
-//  miniflux
+//  ekoz-minidacdsp
 //
-//  Created by Dimitri on 25/11/2019.
-//  Copyright © 2019 Dimitri. All rights reserved.
+//  Created on 04/02/2021.
 //
-
+//  ekoz-minidacdsp by Dimitri Fontaine is licensed under CC BY-NC 4.0.
+//  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
+//
 
 import Foundation
 import UIKit
