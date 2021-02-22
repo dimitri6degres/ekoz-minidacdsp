@@ -99,7 +99,7 @@ maybe a web coder to make a web version.
 (And somebody to re-write all what you read, because i've got a quite bad english…)
 
 ## how to get an ekoz-minidacsdsp?
-This is not a commercial project, you should able to build it by yourself. it's quite easy!  
+This is not a commercial project, you should be able to build it by yourself. it's quite easy!  
 But if you prefer to get one already working, contact me.
 
 ## License
