@@ -1,3 +1,6 @@
+**THIS IS A WORK IN PROGRESS PROJECT**
+**ANY HELP IS WELCOME**
+
 <img height=350px src="https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/images/ekoz-minidacdsp_01.png"></img>
 
 ## the prelude 
