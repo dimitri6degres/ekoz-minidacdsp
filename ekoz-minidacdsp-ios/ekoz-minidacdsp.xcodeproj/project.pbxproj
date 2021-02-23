@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2756233825CD58C400232AE7 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
-		276C684525CC648C00ADE0C6 /* minidacDSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minidacDSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		276C684525CC648C00ADE0C6 /* minidacdsp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minidacdsp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		276C684825CC648C00ADE0C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		276C684A25CC648C00ADE0C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		276C684C25CC648C00ADE0C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		276C684625CC648C00ADE0C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				276C684525CC648C00ADE0C6 /* minidacDSP.app */,
+				276C684525CC648C00ADE0C6 /* minidacdsp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		276C684425CC648C00ADE0C6 /* minidacDSP */ = {
+		276C684425CC648C00ADE0C6 /* minidacdsp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 276C685925CC648E00ADE0C6 /* Build configuration list for PBXNativeTarget "minidacDSP" */;
+			buildConfigurationList = 276C685925CC648E00ADE0C6 /* Build configuration list for PBXNativeTarget "minidacdsp" */;
 			buildPhases = (
 				276C684125CC648C00ADE0C6 /* Sources */,
 				276C684225CC648C00ADE0C6 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = minidacDSP;
+			name = minidacdsp;
 			productName = "Ekoz-miniDSP";
-			productReference = 276C684525CC648C00ADE0C6 /* minidacDSP.app */;
+			productReference = 276C684525CC648C00ADE0C6 /* minidacdsp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				276C684425CC648C00ADE0C6 /* minidacDSP */,
+				276C684425CC648C00ADE0C6 /* minidacdsp */,
 			);
 		};
 /* End PBXProject section */
@@ -343,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		276C685925CC648E00ADE0C6 /* Build configuration list for PBXNativeTarget "minidacDSP" */ = {
+		276C685925CC648E00ADE0C6 /* Build configuration list for PBXNativeTarget "minidacdsp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				276C685A25CC648E00ADE0C6 /* Debug */,

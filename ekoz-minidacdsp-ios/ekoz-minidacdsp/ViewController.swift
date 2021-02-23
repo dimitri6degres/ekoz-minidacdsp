@@ -62,7 +62,7 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     
  
     
-    
+    // update central image to DSP channel used
     func updateImg(){
         switch chnSegment.selectedSegmentIndex {
         case 0:
