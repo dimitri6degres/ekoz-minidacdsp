@@ -2,13 +2,12 @@
 echo "install ekoz-minidacdsp"
 echo "------------"
 
-raspi-config nonint do_hostname ekoz-minidacdsp
-hostnamectl set-hostname "ekoz-minidacdsp" --pretty
-
+# install files from boot folder
 cp /boot/ekoz-minidacdsp.xml /home/pi/.
 cp -R /boot/ekozGATT /home/pi/.
-
 cp /boot/asound.conf /etc/.
+
+# config for bluetooth audio
 sed -i.orig 's/^options snd-usb-audio index=-2$/#options snd-usb-audio index=-2/' /lib/modprobe.d/aliases.conf
 
 mkdir -p /etc/systemd/system/bluealsa.service.d
@@ -58,6 +57,9 @@ EOF
 
 sed -i 's/bluetoothd/bluetoothd -E/' /lib/systemd/system/bluetooth.service
 
+
+# config GATT server service
+
 cat <<'EOF' > /etc/systemd/system/ekoz-minidacdsp.service
 [Unit]
 Description=Ekoz-minidacdsp
@@ -87,21 +89,50 @@ WantedBy=multi-user.target
 EOF
 
 
+
+# config tools for DSP
+
 mkdir -p /var/lib/hifiberry
 mkdir ~/.dsptoolkit
 
-sed -i 's/#Class = 0x000100/Class = 0x200414/' /etc/bluetooth/main.conf
 
+sudo apt-get update -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false
+sudo apt-get install -y python3-pip libxslt1-dev libxml2-dev zlib1g-dev python3-lxml python-lxml libxml2-dev libxslt-dev python-dev  python3-dbus alsa-base alsa-utils bluealsa bluez-tools
+
+sudo pip3 install hifiberrydsp gpiozero
+
+
+# Disable swapfile
+dphys-swapfile swapoff
+dphys-swapfile uninstall
+systemctl disable dphys-swapfile.service
+
+# Remove unwanted packages
+apt-get remove -y --purge triggerhappy logrotate dphys-swapfile fake-hwclock
+apt-get autoremove -y --purge
+apt-get install -y dsp
+dpkg --purge rsyslog
+
+# Disable apt activities
+systemctl disable apt-daily-upgrade.timer
+systemctl disable apt-daily.timer
+systemctl disable man-db.timer
+
+# Move resolv.conf to /run
+mv /etc/resolv.conf /run/resolvconf/resolv.conf
+ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
+
+
+# more bluetooth config 
+
+sed -i 's/#Class = 0x000100/Class = 0x200414/' /etc/bluetooth/main.conf
 adduser pi bluetooth
 adduser pi lp
 hciconfig hci0 piscan
 hciconfig hci0 sspmode 1
 
 
-apt-get update
-apt-get install -y python3-pip libxslt1-dev libxml2-dev zlib1g-dev python3-lxml python-lxml libxml2-dev libxslt-dev python-dev  python3-dbus alsa-base alsa-utils bluealsa bluez-tools
-
-pip3 install hifiberrydsp gpiozero
+# reload services
 
 systemctl daemon-reload
 
@@ -113,4 +144,18 @@ systemctl start sigmatcp.service
 
 dsptoolkit install-profile /home/pi/ekoz-minidacdsp.xml
  
-sudo reboot
+ 
+cat <<'EOF' > /etc/rc.local
+#!/bin/sh -e
+_IP=$(hostname -I) || true
+if [ "$_IP" ]; then
+  printf "My IP address is %s\n" "$_IP"
+fi
+#/bin/sleep 1 && ifconfig wlan0 down
+exit 0
+EOF
+
+raspi-config nonint do_hostname ekoz-minidacdsp
+hostnamectl set-hostname "ekoz-minidacdsp" --pretty
+
+echo "install complete, you can reboot now!"

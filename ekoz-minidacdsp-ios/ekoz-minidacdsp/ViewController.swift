@@ -27,7 +27,6 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     var version = "_"
     var temperature = "_"
     
-    // Outlet for sliders
     @IBOutlet weak var volSlider: UISlider!
     @IBOutlet weak var chnSegment: UISegmentedControl!
     @IBOutlet weak var img: UIImageView!
@@ -88,7 +87,7 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
         if central.state != .poweredOn {
             print("Central is not powered on")
         } else {
-            print("Central scanning for ekoz-minidacDSP");
+            print("Central scanning for ekoz-minidacdsp");
             progress = 1
             centralManager.scanForPeripherals(withServices: nil)
         }
@@ -108,7 +107,9 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
             self.peripheral =  peripheral
             self.peripheral.delegate = self
             
+            print("stop scan")
             centralManager.stopScan()
+            print("connect to services from ", self.peripheral.name as Any)
             centralManager.connect(self.peripheral, options: nil)
             
         }
@@ -118,8 +119,9 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
  
     // The handler if we do connect succesfully
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+        print("try to connect")
         if peripheral == self.peripheral {
-            print("Connected to ekoz-minidacDSP")
+            print("Connected to ekoz-minidacdsp")
             peripheral.discoverServices(nil);
         }
     }
