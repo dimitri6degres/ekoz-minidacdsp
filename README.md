@@ -61,14 +61,16 @@ It is currently only done for iphones...
 all needed files are ine the <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/tree/main/boot>boot folder</a>.  
 a script will do everything to set up the raspberry.
 • mount the hifiberry DAC+ DSP module on top of the raspberry pi zero  
-• download the <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/archive/main.zip>last image file</a> from this repo  
-• download the last os image from <a href=https://github.com/nmcclain/raspberian-firstboot/releases>raspberian-firstboot</a>  
+• download and unzip the <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/archive/main.zip>the files</a>  
+• download the last <a href=https://www.raspberrypi.org/software/operating-systems/>raspberrypi os lite image</a>  
 • mount the image on your computer then copy files from this boot folder to the image boot volume  
 • change your wifi credential in the wpa_supplicant.conf file
 • unmout boot folder and copy the os image on the sdcard (i.g. <a href=https://www.balena.io/etcher/>balenaEtcher</a>)  
-• install the card in the raspberry and boot it  
+• install the card in the raspberry and boot it 
+• ssh your raspberry (login "pi", password "raspberry")
+• launch command "sudo /boot/install.sh"
 • wait a quite long time for the raspberry to install everything (20min?)  
-• the raspberry must reboot by itself to finish the install  
+• the raspberry must tell you to reboot to finish the install  
 • install the app on your phone  
 • open the app and wait for the dac to be detected  
 
