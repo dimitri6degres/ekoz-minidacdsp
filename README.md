@@ -68,7 +68,7 @@ a script will do everything to set up the raspberry.
 • unmout boot folder and copy the os image on the sdcard (i.g. <a href=https://www.balena.io/etcher/>balenaEtcher</a>)  
 • install the card in the raspberry and boot it  
 • ssh your raspberry (login "pi", password "raspberry")  
-• launch command "sudo /boot/install.sh". 
+• launch command "sudo /boot/install.sh"  
 • wait a quite long time for the raspberry to install everything (20min?)  
 • the raspberry must tell you to reboot to finish the install  
 • install the app on your phone  
