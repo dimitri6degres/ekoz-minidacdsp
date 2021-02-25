@@ -23,7 +23,7 @@ GATT_CHRC_IFACE = "org.bluez.GattCharacteristic1"
 GATT_CHRC_IFACE2 = "org.bluez.GattCharacteristic1"
 NOTIFY_TIMEOUT = 5000
 
-SERVER_VERSION = "V1.03"
+SERVER_VERSION = "V1.04"
 
 class EkozminidacdspAdvertisement(Advertisement):
     def __init__(self, index):
@@ -92,7 +92,6 @@ class EkozminidacdspService(Service):
 
 
 
-
     def is_wifi_up(self):
     
         f = open('/sys/class/net/wlan0/operstate', 'r')
@@ -103,18 +102,11 @@ class EkozminidacdspService(Service):
             output = True
         return output
 
-    def is_bluetooth_up(self):
-    
-        f = open('/sys/class/net/wlan0/operstate', 'r')
-        text = f.readline().rstrip()
-        f.close()
-        output = False
-        if str(text)[0] == 'u':
-            output = True
-        return output
+
 
     def set_new_password(self, credential):
        
+        os.system('sudo mount -o remount,rw /')
         os.system('ifconfig wlan0 down')
      
         print("WifiPass")
@@ -147,6 +139,7 @@ class EkozminidacdspService(Service):
         f.close()
 
         os.system('ifconfig wlan0 up')
+        os.system('sudo mount -o remount,ro /')
  
  
         
@@ -166,10 +159,11 @@ class SystemCharacteristic(Characteristic):
         
     def WriteValue(self, value, options):
         val = str(value[0]).upper()
-        if val == "1":
-            os.system('sudo shutdown -r now')
-        elif val == "2":
+        if val.startswith("S"):
             os.system('sudo halt')
+        elif val.startswith("R"):
+            os.system('sudo reboot')
+            
             
     def get_temperature(self):
         value = []
@@ -260,15 +254,15 @@ class WifiCharacteristic(Characteristic):
         return value
 
     def bluetoothNo(self):
-        cmd = 'echo discoverable no | sudo  bluetoothctl && echo pairable no | sudo  bluetoothctl'
-        os.system(cmd)
+        os.system('echo discoverable no | sudo  bluetoothctl && echo pairable no | sudo  bluetoothctl')
+        os.system('sudo mount -o remount,ro /')
         print("make bluetooth pairable no")
         self.service.bluetooth = False
 
 
     def bluetoothYes(self):
-        cmd = 'echo discoverable yes | sudo  bluetoothctl && echo pairable yes | sudo  bluetoothctl'
-        os.system(cmd)
+        os.system('echo discoverable yes | sudo  bluetoothctl && echo pairable yes | sudo  bluetoothctl')
+        os.system('sudo mount -o remount,rw /')
         print("make bluetooth pairable yes")
         self.service.bluetooth = True
         t = Timer(60, self.bluetoothNo)
@@ -281,13 +275,11 @@ class WifiCharacteristic(Characteristic):
             print("wifi toggle")
             if self.service.wifi == True:
                 print("shut down wifi")
-                cmd = 'ifconfig wlan0 down'
-                os.system(cmd)
+                os.system('ifconfig wlan0 down')
                 self.service.wifi = False
             else:
                 print("power up wifi")
-                cmd = 'ifconfig wlan0 up'
-                os.system(cmd)
+                os.system('ifconfig wlan0 up')
                 self.service.wifi = True
         elif val.startswith("B"):
             print("bluetooth toggle")
@@ -297,8 +289,9 @@ class WifiCharacteristic(Characteristic):
                 self.bluetoothYes()
         elif val.startswith("R"):
             print("bluetooth reseting")
-            cmd = 'for device in $(bt-device -l | grep -o "[[:xdigit:]:]\{11,17\}"); do echo "removing bluetooth device: $device | $(bt-device -r $device)"; done'
-            os.system(cmd)
+            os.system('sudo mount -o remount,rw /')
+            os.system('for device in $(bt-device -l | grep -o "[[:xdigit:]:]\{11,17\}"); do echo "removing bluetooth device: $device | $(bt-device -r $device)"; done')
+            os.system('sudo mount -o remount,ro /')
             self.bluetoothYes()
             print("bluetooth reseted")
         else:
@@ -401,30 +394,7 @@ class DSPCharacteristic(Characteristic):
         print("read")
         return value
         
-        
-        
-
-#class DSPDescriptor(Descriptor):
-#    DSP_DESCRIPTOR_UUID = "2903"
-#    DSP_DESCRIPTOR_VALUE = "DSP system"
-#
-#    def __init__(self, characteristic):
-#        Descriptor.__init__(
-#                self, self.DSP_DESCRIPTOR_UUID,
-#                ["read"],
-#                characteristic)
-#
-#    def ReadValue(self, options):
-#        value = []
-#        desc = self.DSP_DESCRIPTOR_VALUE
-#
-#        for c in desc:
-#            value.append(dbus.Byte(c.encode()))
-#
-#        return value
-        
-        
-        
+   
         
 
 app = Application()

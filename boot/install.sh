@@ -2,14 +2,26 @@
 echo "install ekoz-minidacdsp"
 echo "------------"
 
+echo "install some files"
 # install files from boot folder
 cp /boot/ekoz-minidacdsp.xml /home/pi/.
 cp -R /boot/ekozGATT /home/pi/.
 cp /boot/asound.conf /etc/.
 
+
+echo "update system"
+sudo apt update -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false
+sudo apt upgrade -y
+
+echo "install packets"
+sudo apt install -y python3-pip libxslt1-dev libxml2-dev zlib1g-dev python3-lxml python-lxml libxml2-dev libxslt-dev python-dev  python3-dbus alsa-base alsa-utils bluealsa bluez-tools
+
+
 # config for bluetooth audio
 sed -i.orig 's/^options snd-usb-audio index=-2$/#options snd-usb-audio index=-2/' /lib/modprobe.d/aliases.conf
 
+
+echo "install services"
 mkdir -p /etc/systemd/system/bluealsa.service.d
 
 cat <<'EOF' > /etc/systemd/system/bluealsa.service.d/override.conf
@@ -96,12 +108,11 @@ mkdir -p /var/lib/hifiberry
 mkdir ~/.dsptoolkit
 
 
-sudo apt-get update -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false
-sudo apt-get install -y python3-pip libxslt1-dev libxml2-dev zlib1g-dev python3-lxml python-lxml libxml2-dev libxslt-dev python-dev  python3-dbus alsa-base alsa-utils bluealsa bluez-tools
 
+echo "install hifiberry toolkit"
 sudo pip3 install hifiberrydsp gpiozero
 
-
+echo "make sysstem lighter"
 # Disable swapfile
 dphys-swapfile swapoff
 dphys-swapfile uninstall
@@ -110,7 +121,7 @@ systemctl disable dphys-swapfile.service
 # Remove unwanted packages
 apt-get remove -y --purge triggerhappy logrotate dphys-swapfile fake-hwclock
 apt-get autoremove -y --purge
-apt-get install -y dsp
+apt-get install -y busybox-syslogd
 dpkg --purge rsyslog
 
 # Disable apt activities
@@ -124,6 +135,8 @@ ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
 
 
 # more bluetooth config 
+
+echo "enable services"
 
 sed -i 's/#Class = 0x000100/Class = 0x200414/' /etc/bluetooth/main.conf
 adduser pi bluetooth
@@ -142,6 +155,16 @@ systemctl enable ekoz-minidacdsp.service
 systemctl enable sigmatcp.service 
 systemctl start sigmatcp.service 
 
+#  wait for sigmatcp service to start
+while true; do
+    if [ $(systemctl is-active sigmatcp.service) == "active" ]; then
+        break
+    fi
+
+    sleep 1
+done
+
+echo "install dsp profile"
 dsptoolkit install-profile /home/pi/ekoz-minidacdsp.xml
  
  
@@ -157,5 +180,25 @@ EOF
 
 raspi-config nonint do_hostname ekoz-minidacdsp
 hostnamectl set-hostname "ekoz-minidacdsp" --pretty
+
+
+
+echo "make system read-only"
+
+# Adjust kernel command line
+sed -i.backup -e 's/rootwait$/rootwait fsck.mode=skip noswap ro/' /boot/cmdline.txt
+
+# Edit the file system table
+sed -i.backup -e 's/vfat\s*defaults\s/vfat defaults,ro/; s/ext4\s*defaults,noatime\s/ext4 defaults,noatime,ro/' /etc/fstab
+
+# Make edits to fstab
+cat <<'EOF' >> /etc/fstab
+tmpfs /tmp tmpfs mode=1777,nosuid,nodev 0 0
+tmpfs /var/tmp tmpfs mode=1777,nosuid,nodev 0 0
+tmpfs /var/spool tmpfs mode=0755,nosuid,nodev 0 0
+tmpfs /var/log tmpfs mode=0755,nosuid,nodev 0 0
+tmpfs /var/lib/dhcpcd5 tmpfs mode=0755,nosuid,nodev 0 0
+EOF
+
 
 echo "install complete, you can reboot now!"

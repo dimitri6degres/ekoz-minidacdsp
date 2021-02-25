@@ -341,10 +341,9 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     
     func modifWifiCred(ssid:String, pass:String, country:String){
         
-        //        let string = "FR&&&Livebox-BB0C&&&4YFw3G6qh3Ztwk49nF"
         
         let startIndex = country.index(country.startIndex, offsetBy: 2)
-        let country2 = String(country[..<startIndex])    // "My "
+        let country2 = String(country[..<startIndex])   
         
         
         let string = "&\(country2.uppercased())&&&\(ssid)&&&\(pass)"
@@ -414,9 +413,9 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
                 optionsVC.callback = { result in
                     switch result {
                     case "shut":
-                        self.writeDSPchange(withCharacteristic: self.sysChar!, withValue: String(2).data(using: .utf8)!)
-//                    case "reboot":
-//                        self.writeDSPchange(withCharacteristic: self.sysChar!, withValue: String(1).data(using: .utf8)!)
+                        self.writeDSPchange(withCharacteristic: self.sysChar!, withValue: String("S").data(using: .utf8)!)
+                    case "reboot":
+                        self.writeDSPchange(withCharacteristic: self.sysChar!, withValue: String("R").data(using: .utf8)!)
                     case "reset":
                         self.writeDSPchange(withCharacteristic: self.dspChar!, withValue: ("R").data(using: .utf8)!)
                         self.progress = 1
