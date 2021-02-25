@@ -59,7 +59,7 @@ It is currently only done for iphones...
 
 ## Manual installation
 all needed files are ine the <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/tree/main/boot>boot folder</a>.  
-a script will do everything to set up the raspberry.
+a script will do everything to set up the raspberry.  
 • mount the hifiberry DAC+ DSP module on top of the raspberry pi zero  
 • download and unzip the <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/archive/main.zip>the files</a>  
 • change your wifi credential in the wpa_supplicant.conf file  
