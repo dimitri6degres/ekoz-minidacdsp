@@ -52,7 +52,7 @@ It is currently only done for iphones...
 ## Basic installation
 • install the app on your phone  
 • mount the hifiberry DAC+ DSP module on top of the raspberry pi zero  
-• download the <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/raw/main/ekoz-minidacdsp_server.img.zip>last image file</a> from this repo  
+• download the <a href=https://github.com/dimitri6degres/ekoz-minidacdsp/releases/download/server/ekoz-minidacdsp_server.img.zip>last image file</a> from this repo  
 • copy the os image on the sdcard (with something like <a href=https://www.balena.io/etcher/>balenaEtcher</a>)  
 • install the card in the raspberry and boot it  
 • open the app on your phone, wait for the dac to be detected  
